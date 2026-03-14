@@ -1,0 +1,299 @@
+```html id="milanosite001"
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Milano Pizza | La Tour-du-Pin</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:600;
+color:#ff8c00;
+}
+
+nav a{
+color:white;
+margin-left:25px;
+text-decoration:none;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ff8c00;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),
+url("https://images.unsplash.com/photo-1594007654729-407eedc4fe24");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+color:#ff8c00;
+animation:fadeUp 1s;
+}
+
+.hero p{
+font-size:22px;
+margin-top:10px;
+}
+
+.btn{
+margin-top:25px;
+background:#ff8c00;
+border:none;
+padding:16px 35px;
+font-size:18px;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:100px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#ff8c00;
+font-size:34px;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.price{
+color:#ff8c00;
+font-weight:600;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:black;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Milano Pizza</div>
+
+<nav>
+<a href="#menu">Menu</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Milano Pizza</h1>
+
+<p>Tacos • Burgers • Pizzas • Tex-Mex</p>
+
+<p>La Tour-du-Pin</p>
+
+<a href="tel:0606462321">
+<button class="btn">Commander</button>
+</a>
+
+</section>
+
+
+<section class="section" id="menu">
+
+<h2>Nos Burgers</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+Cheese
+<div class="price">3.50€</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+Double Cheese
+<div class="price">5€</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+Chicken Burger
+<div class="price">5€</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550317138-10000687a72b">
+Big Burger
+<div class="price">6€</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<h2>Tex Mex</h2>
+
+<div class="menu">
+
+<div class="card">
+Nuggets
+<div class="price">5€</div>
+</div>
+
+<div class="card">
+Wings
+<div class="price">5€</div>
+</div>
+
+<div class="card">
+Tenders
+<div class="price">5€</div>
+</div>
+
+<div class="card">
+Onion Rings
+<div class="price">4.50€</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section contact" id="contact">
+
+<h2>Contact</h2>
+
+<p>Milano Pizza</p>
+
+<p>La Tour-du-Pin</p>
+
+<p>📞 06 06 46 23 21</p>
+
+<br>
+
+<a href="tel:0606462321">
+<button class="btn">Appeler</button>
+</a>
+
+<br><br>
+
+<iframe
+src="https://www.google.com/maps?q=La+Tour+du+Pin&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
+
+</section>
+
+
+<footer>
+
+<p>© Milano Pizza</p>
+
+</footer>
+
+</body>
+</html>
+```
+<iframe
+src="https://www.google.com/maps?q=La+Tour+du+Pin&output=embed"
+width="100%"
+height="300"
+style="border:0;">
+</iframe>
